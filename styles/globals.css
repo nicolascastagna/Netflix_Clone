@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+       @apply bg-[#141414] text-white relative min-h-screen bg-gradient-to-b from-gray-900/10 to-[#010511];
+    }
+}
+
+@layer base {
+    header {
+        @apply fixed top-0 z-20 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
+    }
+}
+
+@layer components {
+    .headerLink {
+        @apply cursor-pointer text-sm font-light text-gray-500 transition duration-75 hover:text-gray-300;
+    }
+}
