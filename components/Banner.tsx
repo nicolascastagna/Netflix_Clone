@@ -1,4 +1,6 @@
 import Image from "next/image";
+import InfoButton from "./InfoButton";
+import PlayButton from "./PlayButton";
 
 const Banner = () => {
   return (
@@ -13,7 +15,7 @@ const Banner = () => {
       </div>
       <div className="absolute top-1/2 -translate-y-1/2 left-5">
         <h1 className="text-5xl font-semibold">Title</h1>
-        <p className="text-sm pt-5 w-96">
+        <p className="text-sm pt-5 w-96 line-clamp-6">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
           velit voluptatibus facere voluptates odio, dolorum provident facilis
           tenetur cumque aperiam id, error nostrum incidunt, quasi omnis! Rem
@@ -27,6 +29,10 @@ const Banner = () => {
           explicabo! Doloribus nulla totam exercitationem tempore itaque
           excepturi explicabo tempora officia dignissimos minus!
         </p>
+        <div className="flex items-center space-x-5 pt-5">
+          <PlayButton />
+          <InfoButton />
+        </div>
       </div>
     </section>
   );

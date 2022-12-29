@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-       @apply bg-[#141414] text-white relative min-h-screen bg-gradient-to-b from-gray-900/10 to-[#010511];
+       @apply bg-[#141414] text-white relative min-h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] !scrollbar-thin !scrollbar-thumb-red-700;
     }
 }
 
