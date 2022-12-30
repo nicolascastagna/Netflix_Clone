@@ -8,5 +8,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp"), require("tailwind-scrollbar")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar"),
+    require("tailwindcss-no-scrollbar"),
+  ],
 };
