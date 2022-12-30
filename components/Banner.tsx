@@ -23,8 +23,8 @@ const Banner = ({ movie }: Props) => {
         <h1 className="text-5xl font-semibold">{movie.title}</h1>
         <p className="text-sm pt-5 w-96 line-clamp-6">{movie.overview}</p>
         <div className="flex items-center space-x-5 pt-5">
-          <PlayButton />
-          <InfoButton />
+          <PlayButton movie={movie} />
+          <InfoButton movie={movie} />
         </div>
       </div>
     </section>

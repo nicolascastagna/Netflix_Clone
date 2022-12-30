@@ -34,5 +34,5 @@ export const fetchMovie = async (id: string) => {
     `${BASE_URL}movie/${id}?api_key=${API_KEY}&language=fr-FR`
   );
   const data = await res.json();
-  return data.results;
+  return data;
 };

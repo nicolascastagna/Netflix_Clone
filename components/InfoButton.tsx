@@ -3,11 +3,15 @@
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
 
-const InfoButton = () => {
+interface Props {
+  movie: Movie;
+}
+
+const InfoButton = ({ movie }: Props) => {
   const router = useRouter();
   return (
     <button
-      onClick={() => router.push("/")}
+      onClick={() => router.push(`/${movie.id}`)}
       className="hover:opacity-80 rounded-xl bg-gray-500 text-sm py-2 px-3 text-white flex items-center space-x-2"
     >
       <i>

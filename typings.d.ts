@@ -1,3 +1,8 @@
+interface Genre {
+    id: number;
+    name: string;
+}
+
 interface Movie {
     title: string;
     backdrop_path?: string;
@@ -16,6 +21,7 @@ interface Movie {
     vote_average: number;
     vote_count: number;
     videos: any;
+    genres: Genre[];
 }
 
 interface Element {
