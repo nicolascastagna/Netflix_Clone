@@ -5,6 +5,6 @@ module.exports = {
     appDir: true,
   },
   images: {
-    domains: ["occ-0-7208-1722.1.nflxso.net"],
+    domains: ["occ-0-7208-1722.1.nflxso.net", "image.tmdb.org"],
   },
 };
