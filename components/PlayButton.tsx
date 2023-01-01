@@ -12,7 +12,7 @@ const PlayButton = ({ movie }: Props) => {
       <i>
         <PlayIcon className="h-5 w-5" />
       </i>
-      <span>Play</span>
+      <span>Lecture</span>
     </button>
   );
 };

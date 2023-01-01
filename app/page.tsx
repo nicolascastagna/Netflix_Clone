@@ -21,10 +21,10 @@ const HomePage = async () => {
   return (
     <div className="space-y-10 pb-20">
       <Banner movie={randomMovieFromTrending} />
-      <Row title="Current Trends" movies={trendingMovies} />
+      <Row title="Tendances actuelles" movies={trendingMovies} />
       <Row title="Top Rated" movies={topRatedMovies} />
-      <Row title="Netflix Originals" movies={netflixOriginals} />
-      <Row title="Family" movies={familyMovies} />
+      <Row title="Seulement sur Netflix" movies={netflixOriginals} />
+      <Row title="Films pour la famille" movies={familyMovies} />
     </div>
   );
 };

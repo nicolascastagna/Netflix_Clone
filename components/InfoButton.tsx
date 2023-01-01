@@ -17,7 +17,7 @@ const InfoButton = ({ movie }: Props) => {
       <i>
         <InformationCircleIcon className="h-5 w-5" />
       </i>
-      <span>More informations</span>
+      <span>Plus d'informations</span>
     </button>
   );
 };

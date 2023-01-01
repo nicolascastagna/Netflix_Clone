@@ -16,6 +16,6 @@
 
 @layer components {
     .headerLink {
-        @apply cursor-pointer text-sm font-light text-gray-500 transition duration-75 hover:text-gray-300;
+        @apply cursor-pointer text-sm font-light opacity-90 transition duration-75 hover:opacity-70;
     }
 }

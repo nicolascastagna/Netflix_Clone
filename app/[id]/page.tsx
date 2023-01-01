@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import PlayButton from "../../components/PlayButton";
 import { fetchMovie } from "../../utils/fetchMovies";
 
 interface Props {
@@ -32,6 +33,9 @@ const MovieDetailPage = async ({ params }: Props) => {
             {movie?.genres?.map((genre, index) => (
               <p key={genre.id}>{genre.name}</p>
             ))}
+          </div>
+          <div className="flex items-center space-x-5 pt-5">
+            <PlayButton movie={movie} />
           </div>
         </div>
       ) : (
