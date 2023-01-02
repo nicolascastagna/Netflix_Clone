@@ -1,19 +1,20 @@
-import Header from "../components/Header"
+import Header from "../components/Header";
+import Provider from "../components/Provider";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html>
       <head />
       <body>
-        <Header />
-        <main>
-        {children}
-        </main>
-       </body>
+        <Provider>
+          <Header />
+          <main>{children}</main>
+        </Provider>
+      </body>
     </html>
-  )
+  );
 }

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import CustomPlayer from "../../components/CustomPlayer";
 import PlayButton from "../../components/PlayButton";
-import { fetchMovie } from "../../utils/fetchMovies";
+import { fetchMovie, fetchVideo } from "../../utils/fetchMovies";
 
 interface Props {
   params: {
@@ -11,9 +12,11 @@ interface Props {
 
 const MovieDetailPage = async ({ params }: Props) => {
   const movie: Movie = await fetchMovie(params.id);
+  const videos = await fetchVideo(movie);
 
   return (
     <div className="h-screen bg-transparent w-full relative">
+      <CustomPlayer />
       <div className="relative w-full h-full opacity-40">
         <Image
           src={`https://image.tmdb.org/t/p/w500${
@@ -35,7 +38,7 @@ const MovieDetailPage = async ({ params }: Props) => {
             ))}
           </div>
           <div className="flex items-center space-x-5 pt-5">
-            <PlayButton movie={movie} />
+            <PlayButton videos={videos} movie={movie} />
           </div>
         </div>
       ) : (

@@ -8,6 +8,7 @@ export const fetchTrending = async () => {
   const data = await res.json();
   return data.results;
 };
+
 export const fetchTopRated = async () => {
   const res = await fetch(
     `${BASE_URL}/movie/top_rated?api_key=${API_KEY}&language=fr-FR`
@@ -15,6 +16,7 @@ export const fetchTopRated = async () => {
   const data = await res.json();
   return data.results;
 };
+
 export const fetchNetflixOriginals = async () => {
   const res = await fetch(
     `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=fr-FR&with_networks=213`
@@ -22,6 +24,7 @@ export const fetchNetflixOriginals = async () => {
   const data = await res.json();
   return data.results;
 };
+
 export const fetchFamily = async () => {
   const res = await fetch(
     `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=fr-FR&with_genres=10751`
@@ -29,10 +32,19 @@ export const fetchFamily = async () => {
   const data = await res.json();
   return data.results;
 };
+
 export const fetchMovie = async (id: string) => {
   const res = await fetch(
     `${BASE_URL}movie/${id}?api_key=${API_KEY}&language=fr-FR`
   );
   const data = await res.json();
   return data;
+};
+
+export const fetchVideo = async (movie: Movie) => {
+  const res = await fetch(
+    `${BASE_URL}movie/${movie.id}/videos?api_key=${API_KEY}&language=fr-FR`
+  );
+  const data = await res.json();
+  return data?.results;
 };
