@@ -1,27 +1,28 @@
-# Next.js + Tailwind CSS Example
+# Netflix Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Création de l'interface utilisateur de Netflix avec React, TypeScript, Tailwind et Recoil.
+Les données proviennent de l'API The Movie Database.
 
-## Deploy your own
+## Installation du projet
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+```
+git clone https://github.com/nicolascastagna/Netflix_Clone.git
+cd netflix-clone
+npm i
+npm run dev
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+## Configuration API Key TMDB
+
+Créer un compte sur la plateforme https://www.themoviedb.org/ et récupéré votre clé API
+
+A la racine du projet, ajoutez un fichier .env.local contenant votre clé API :
+
+```
+NEXT_PUBLIC_MOVIE_API_KEY=API_KEY
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Preview
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+![Capture d’écran 2023-01-09 à 12 44 12](https://user-images.githubusercontent.com/100592012/211300930-af14a0d6-af4a-4c69-9fc6-67bea615b7c7.png)
+![Capture d’écran 2023-01-09 à 12 44 42](https://user-images.githubusercontent.com/100592012/211300948-2a3cb402-a76d-4170-908f-2e771ba22725.png)
