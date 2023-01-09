@@ -19,7 +19,7 @@ const MovieDetailPage = async ({ params }: Props) => {
       <CustomPlayer />
       <div className="relative w-full h-full opacity-40">
         <Image
-          src={`https://image.tmdb.org/t/p/w500${
+          src={`https://image.tmdb.org/t/p/original${
             movie?.backdrop_path || movie?.poster_path
           }`}
           className="rounded-sm object-cover md:rounded"
