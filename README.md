@@ -3,6 +3,9 @@
 Création de l'interface utilisateur de Netflix avec React, TypeScript, Tailwind et Recoil.
 Les données proviennent de l'API The Movie Database.
 
+Projet visible à l'URL :
+https://netflix-clone-next-010.vercel.app/
+
 ## Installation du projet
 
 ```
